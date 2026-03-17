@@ -5,6 +5,8 @@ This project showcases my ability to design and develop scalable web application
 
 ---
 
+![Home Page](./img1.jpg)
+
 ## 📌 Overview
 
 This application allows users to explore football-related data through a clean and responsive interface. It demonstrates strong understanding of:
@@ -29,6 +31,7 @@ This application allows users to explore football-related data through a clean a
 - 🔍 Clean and structured UI for better user experience
 
 ---
+![Home Page](./img2.jpg)
 
 ## 🛠️ Tech Stack
 
@@ -51,6 +54,7 @@ This application allows users to explore football-related data through a clean a
 - VS Code
 
 ---
+![Home Page](./img3.jpg)
 
 ## 🧠 Skills Demonstrated
 
@@ -71,5 +75,4 @@ This project reflects the following skills:
 ```bash
 git clone https://github.com/anju515/MERN-stack-Football
 
-![Home Page](./screenshots/home.png)
-![Dashboard](./screenshots/dashboard.png)
+
