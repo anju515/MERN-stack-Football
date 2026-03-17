@@ -1,20 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
+var express = require('express');
+const football = require('../controller/FootballController');
+var router = express.Router();
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-    <App />
-  </BrowserRouter>
-  </React.StrictMode>
-);
+/* GET home page. */
+router.get('/', football.viewTeam);
+router.post('/add-team', football.addTeam);
+router.get('/single-team/:id', football.singleteam);
+router.patch('/update-team/:id', football.updateTeam);
+router.delete('/delete-team/:id', football.deleteTeam);
+router.get('/teams/:win', football.limitSkip);
+router.get('/statistics/:year', football.statistics);
+router.get('/avg/:year', football.avgGoalFor);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+module.exports = router;
